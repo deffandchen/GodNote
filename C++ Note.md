@@ -35,12 +35,21 @@
 ### 深拷贝和浅拷贝
 ## class
 ### 构造函数不能是虚函数
+### 类模板
+每个参数(T1,T2)前面都需要加class
+
+	template<class T1 ,class T2>
+	class A{
+	...
+	}
 
 ## 类型转换
 	static_cast:强制类型转换。float = dynamic_cast<float> ;
 	dynamic_cast:基类和派生类之间的转换。可以将基类的指针或引用安全地转为派生类。
 	const_cast:用于去除变量的const性。
 ## sizeof
+	sizeof和strlen的区别：
+	sizeof()返回参数（数组、指针、类、对象等），strlen返回字符串所占的字节数。
 	指针、long、double占8个字节，int、float占4个字节，char占1个。
 ### struct
 ### union
@@ -71,3 +80,4 @@
 ## 二叉树
 ## 排序
 ## 随机数生成
+好的，总结了一下：手撕的有：线程池，avl，红黑树及升级，map，deque，sort，约瑟夫链表，lru，ringbuff，数组实现生产者消费者队列
